@@ -10,7 +10,7 @@
 <link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.553">
 
-  <title>Test title</title>
+  <title>Research opportunities</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -30,6 +30,7 @@
     }
   </style>
   <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto.css">
+  <link rel="stylesheet" href="styles.css">
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -325,15 +326,78 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Test title</h1>
+  <h1 class="title">Research opportunities</h1>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="test" class="slide level2">
-<h2>Test</h2>
-<p>This is a test…</p>
+<section id="proposal-outline" class="slide level2">
+<h2>Proposal outline</h2>
+<p><br>
+<br>
+</p>
+<blockquote>
+<p><strong>Step 1</strong></p>
+<p>Evaluate clinical utility of prediction models using observational data</p>
+</blockquote>
+</section>
+<section id="proposal-outline-1" class="slide level2">
+<h2>Proposal outline</h2>
+<p><br>
+<br>
+</p>
+<blockquote>
+<p><strong>Step 2</strong></p>
+<p>Compare risk-based approches to state-of-the-art methods for prediction of benefit in a large simulation study. Methods will be demonstrated using real data</p>
+</blockquote>
+</section>
+<section id="proposal-outline-2" class="slide level2">
+<h2>Proposal outline</h2>
+<p><br>
+<br>
+</p>
+<blockquote>
+<p><strong>Step 3</strong></p>
+<p>Compare ensemble methods for the prediction of benefit. Models will be compared in terms of prediction performance and clinical utility</p>
+</blockquote>
+</section>
+<section id="step-1-idea" class="slide level2">
+<h2>Step 1 — Idea</h2>
+<p><br>
+<br>
+</p>
+<p>Following the thought process of <a href="https://journals.lww.com/epidem/fulltext/2020/05000/aim_for_clinical_utility,_not_just_predictive.8.aspx">Sachs et al</a>:</p>
+<p><br>
+</p>
+<ul>
+<li>Data of the form <span class="math inline">\((Y(0), Y(1), X, Z)\)</span></li>
+<li>The clinical utility of any proposed treatment strategy <span class="math inline">\(s\)</span> would need to be evaluated in a RCT</li>
+<li>We would need to evaluate <span class="math inline">\(E\big\{ Y(s) \big\} - E\big\{ Y(s_0) \big\}\)</span></li>
+</ul>
+</section>
+<section id="step-1-idea-1" class="slide level2">
+<h2>Step 1 — Idea</h2>
+<p><br>
+<br>
+</p>
+<p>If we had RCT data we could estimate:</p>
+<p><br>
+</p>
+<ul>
+<li><span class="math inline">\(E\big\{ Y(s) \big\}\)</span> from <span class="math inline">\(E\big\{ Y | Z = s \big\}\)</span></li>
+<li><span class="math inline">\(E\big\{ Y(s_0) \big\}\)</span> from <span class="math inline">\(E\big\{ Y | Z = s_0 \big\}\)</span></li>
+</ul>
+</section>
+<section id="step-1-idea-2" class="slide level2">
+<h2>Step 1 — Idea</h2>
+<p><br>
+<br>
+</p>
+<ul>
+<li>Not the case in observational data</li>
+<li>Decompose: <span class="math display">\[E\big\{ Y(s) \big\} = P(s=1)E\big\{Y(1)|s=1\big\} + P(s=0)E\big\{Y(0)|s=0\big\}\]</span></li>
+</ul>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
