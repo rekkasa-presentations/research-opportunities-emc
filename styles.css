@@ -1,0 +1,27 @@
+/* css styles */
+
+.title {
+  font-size: 100px !important;
+  color: black !important;
+}
+
+.level2 {
+  font-size: 50px !important;
+  color: black !important;
+}
+
+body ul {
+  font-size: 0.9em;
+}
+
+.math.inline {
+  font-size: 0.8em  !important;
+}
+
+.MathJax, .MathJax_Display  {
+    font-size: 0.8em  !important;
+}
+
+.small-text {
+    font-size: 0.7em;
+}

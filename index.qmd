@@ -7,10 +7,89 @@ format:
     fontsize: "60px"
     slide-number: true
     menu: false
-    title: Test title
-fontcolor: white
+    title: Research opportunities
+css: styles.css
 ---
 
-## Test
+## Proposal outline
 
-This is a test...
+\
+\
+
+> **Step 1**
+>
+> Evaluate clinical utility of prediction models using observational data
+
+
+## Proposal outline
+
+\
+\
+
+> **Step 2**
+>
+> Compare risk-based approches to state-of-the-art methods for prediction of benefit in a large simulation study.
+> Methods will be demonstrated using real data
+
+
+## Proposal outline
+
+\
+\
+
+> **Step 3**
+>
+> Compare ensemble methods for the prediction of benefit. Models will be compared in terms of prediction performance and
+> clinical utility
+
+
+## Step 1 --- Idea
+
+\
+\
+
+Following the thought process of
+[Sachs et al](https://journals.lww.com/epidem/fulltext/2020/05000/aim_for_clinical_utility,_not_just_predictive.8.aspx):
+
+\
+
+- Data of the form $(Y(0), Y(1), X, Z)$
+- The clinical utility of any proposed treatment strategy $s$ would need to be evaluated in a RCT
+- We would need to evaluate $E\big\{ Y(s) \big\} - E\big\{ Y(s_0) \big\}$
+
+
+## Step 1 --- Idea
+
+\
+\
+
+If we had RCT data we could estimate:
+
+\
+
+- $E\big\{ Y(s) \big\}$ from $E\big\{ Y | Z = s \big\}$
+- $E\big\{ Y(s_0) \big\}$ from  $E\big\{ Y | Z = s_0 \big\}$
+
+## Step 1 --- Idea
+
+\
+\
+
+- Not so simple in RCT
+- $E\big\{ Y(s_0) \big\}$ can be estimated directly
+- For $E\big\{ Y(s) \big\}$ we can decompose: $$E\big\{ Y(s) \big\} = P(s=1)E\big\{Y(1)|s=1\big\} + P(s=0)E\big\{Y(0)|s=0\big\}$$
+
+\
+
+- $P(s=1)$ and $P(s=0)$ can be estimated directly
+
+## Step 1
+
+\
+\
+
+We need to figure out how to estimate $E\big\{Y(1)|s=1\big\}$ and $E\big\{Y(0)|s=0\big\}$
+
+\
+
+Sachs et al used g-method
