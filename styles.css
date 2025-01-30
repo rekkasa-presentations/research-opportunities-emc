@@ -14,6 +14,13 @@ body ul {
   font-size: 0.9em;
 }
 
+.math.inline {
+  font-size: 0.8em  !important;
+}
+
+.MathJax, .MathJax_Display  {
+    font-size: 0.8em  !important;
+}
 
 .small-text {
     font-size: 0.7em;
