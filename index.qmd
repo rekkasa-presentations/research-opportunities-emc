@@ -92,4 +92,18 @@ We need to figure out how to estimate $E\big\{Y(1)|s=1\big\}$ and $E\big\{Y(0)|s
 
 \
 
-Sachs et al used g-method
+- Sachs et al used g-method
+- Maybe we could explore PS approaches?
+
+## Step 1 --- Plan
+
+\
+\
+
+- Develop an R-package for the evaluation of prediction model clinical utility
+  - Compatible with `PatientLevelPrediction`
+  - OHDSI-EU contribution?
+
+\
+
+- Find a good clinical application to run a (small?) network study
