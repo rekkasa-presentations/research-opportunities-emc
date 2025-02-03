@@ -28,7 +28,7 @@ css: styles.css
 
 > **Step 2**
 >
-> Compare risk-based approches to state-of-the-art methods for prediction of benefit in a large simulation study.
+> Compare risk-based approaches to state-of-the-art methods for prediction of benefit in a large simulation study.
 > Methods will be demonstrated using real data
 
 
@@ -75,7 +75,7 @@ If we had RCT data we could estimate:
 \
 \
 
-- Not so simple in RCT
+- Not so simple in observational data
 - $E\big\{ Y(s_0) \big\}$ can be estimated directly
 - For $E\big\{ Y(s) \big\}$ we can decompose: $$E\big\{ Y(s) \big\} = P(s=1)E\big\{Y(1)|s=1\big\} + P(s=0)E\big\{Y(0)|s=0\big\}$$
 
